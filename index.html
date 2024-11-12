@@ -1,45 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,40..300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,40..300&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="./assets/css/style.css">
-  
-  <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-</head>
-<body>
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    
+    <header>
+      <div class="first-header">
+        
+        <img class="menu-mobile" src="./assets/images/icon-menu.svg" alt="Menu mobile"/>
+        
+        <img class="logo" src="./assets/images/logo.svg" alt="Logo Sneakers" />
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+        <nav class="nav">
+          <img class="close" src="./assets/images/icon-close.svg" alt="Icon Close"/>
+          <ul class="menu">
+            <li><a href="">Collections</a></li>
+            <li><a href="">Men</a></li>
+            <li><a href="">Women</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
 
-  Sneaker Company
+      <div class="second-header">
+        <a class="cart" href="#"
+          ><img src="./assets/images/icon-cart.svg" alt="Icon Cart"
+        /></a>
+        <img
+          class="avatar"
+          src="./assets/images/image-avatar.png"
+          alt="Image Profile"
+        />
 
-  Fall Limited Edition Sneakers
+        <div class="basket">
+          <h3>Cart</h3>
+          <div class="details-basket">
+            <img
+              class="thumb-product"
+              src="./assets/images/image-product-1-thumbnail.jpg"
+              alt="Image with two sneakers in thumbnail"
+            />
+            <div class="desc-basket">
+              <p>Fall Limited Editon Sneaker</p>
+              <p>$125.00 x 3 <span>$375.00</span></p>
+            </div>
+            <img
+              class="icon-delete"
+              src="./assets/images/icon-delete.svg"
+              alt="Icon Garbage"
+            />
+          </div>
+          <button class="btn btn-checkout">Checkout</button>
+        </div>
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
+        <div class="basket-empty">
+          <h3>Cart</h3>
+          <div class="details-empty">
+            <p>Your cart is empty.</p>
+          </div>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </header>
 
-  $125.00
-  50%
-  $250.00
+    <main class="container">
+      <div class="overlay-lightbox"></div>
+      <section class="box-product">
+        <article class="gallery">
+          <div class="image-product">
+            <img
+              src="./assets/images/image-product-1.jpg"
+              alt="Image with two sneakers"
+            />
+          </div>
+          <div class="thumbnail">
+            <img
+              src="./assets/images/image-product-1-thumbnail.jpg"
+              alt="Image with two sneakers in thumbnail"
+            />
+            <img
+              src="./assets/images/image-product-2-thumbnail.jpg"
+              alt="Image with two sneakers in thumbnail"
+            />
+            <img
+              src="./assets/images/image-product-3-thumbnail.jpg"
+              alt="Image with two sneakers in thumbnail"
+            />
+            <img
+              src="./assets/images/image-product-4-thumbnail.jpg"
+              alt="Image with two sneakers in thumbnail"
+            />
+          </div>
+        </article>
 
-  0
-  Add to cart
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Leonardo Amaral</a>.
-  </footer>
-</body>
+        <!-- DESCRIPTION PRODUCT -->
+        <article class="desc-product">
+          <h1 class="title">Sneaker Company</h1>
+
+          <h2 class="subtitle">Fall Limited Edition Sneakers</h2>
+
+          <p class="description">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+
+          <div class="price">
+            <div class="content-price">
+              <p class="discount-price">$125.00</p>
+              <span class="percentage">50%</span>
+            </div>
+
+            <div class="full-price">
+              <span>$250.00</span>
+            </div>
+          </div>
+
+          <div class="content-cart">
+            <div class="amount-product">
+              <button class="btn-minus">
+                <img src="./assets/images/icon-minus.svg" alt="Button minus" />
+              </button>
+              <span class="amount">0</span>
+              <button class="btn-plus">
+                <img src="./assets/images/icon-plus.svg" alt="Button plus" />
+              </button>
+            </div>
+
+            <button class="btn btn-add">
+              <img src="./assets/images/icon-cart-btn.svg" alt="Icon cart" />Add
+              to cart
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <!-- LIGHTBOX -->
+      <div class="lightbox">
+        <div class="product-lightbox">
+          <div class="close-lightbox">
+            <img src="./assets/images/icon-close-lightbox.svg" alt="Icon Close">
+          </div>
+          <div class="prev-next">
+            <button class="prev-btn"><img src="./assets/images/icon-previous.svg" alt="Icon Previous"></button>
+            <button class="next-btn"><img src="./assets/images/icon-next.svg" alt="Icon Next"></button>
+          </div>
+          <img
+            src="./assets/images/image-product-1.jpg"
+            alt="Image with two sneakers"
+          />
+        </div>
+        <div class="thumb-lightbox">
+          <img
+            src="./assets/images/image-product-1-thumbnail.jpg"
+            alt="Image with two sneakers in thumbnail"
+          />
+          <img
+            src="./assets/images/image-product-2-thumbnail.jpg"
+            alt="Image with two sneakers in thumbnail"
+          />
+          <img
+            src="./assets/images/image-product-3-thumbnail.jpg"
+            alt="Image with two sneakers in thumbnail"
+          />
+          <img
+            src="./assets/images/image-product-4-thumbnail.jpg"
+            alt="Image with two sneakers in thumbnail"
+          />
+        </div>
+      </div>
+
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Leonardo Amaral</a>.
+    </footer>
+
+    <script src="./assets/js/app.js" defer></script>
+  </body>
 </html>
