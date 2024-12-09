@@ -45,6 +45,7 @@
       </div>
 
       <div class="second-header">
+        <p class="notification">3</p>
         <a class="cart" href="#"
           ><img src="./assets/images/icon-cart.svg" alt="Icon Cart"
         /></a>
@@ -64,7 +65,7 @@
             />
             <div class="desc-basket">
               <p>Fall Limited Editon Sneaker</p>
-              <p>$125.00 x 3 <span>$375.00</span></p>
+              <p id="total-price">$125.00 x 3 <span>$375.00</span></p>
             </div>
             <img
               class="icon-delete"
@@ -72,15 +73,11 @@
               alt="Icon Garbage"
             />
           </div>
-          <button class="btn btn-checkout">Checkout</button>
-        </div>
-
-        <div class="basket-empty">
-          <h3>Cart</h3>
           <div class="details-empty">
             <p>Your cart is empty.</p>
           </div>
-        </div>
+          <button class="btn btn-checkout">Checkout</button>
+        </div>        
       </div>
       <div class="overlay"></div>
     </header>
@@ -90,27 +87,45 @@
       <section class="box-product">
         <article class="gallery">
           <div class="image-product">
+            <div class="prev-next-mobile">
+              <button class="prev-mobile"><img src="./assets/images/icon-previous.svg" alt="Previous Button"></button>
+              <button class="next-mobile"><img src="./assets/images/icon-next.svg" alt="Next Button"></button>
+
+            </div>
+            
             <img
+              id="img-mobile"
               src="./assets/images/image-product-1.jpg"
               alt="Image with two sneakers"
             />
           </div>
           <div class="thumbnail">
-            <img
+            <img class="thumb"
+              data-image-src="./assets/images/image-product-1-thumbnail.jpg"
               src="./assets/images/image-product-1-thumbnail.jpg"
-              alt="Image with two sneakers in thumbnail"
+              alt="thumbnail 1"
+              data-id="1"
             />
             <img
+              class="thumb"
+              data-image-src="./assets/images/image-product-2-thumbnail.jpg"
               src="./assets/images/image-product-2-thumbnail.jpg"
-              alt="Image with two sneakers in thumbnail"
+              alt="thumbnail 2"
+              data-id="2"
             />
             <img
+              class="thumb"
+              data-image-src="./assets/images/image-product-3-thumbnail.jpg"
               src="./assets/images/image-product-3-thumbnail.jpg"
-              alt="Image with two sneakers in thumbnail"
+              alt="thumbnail 3"
+              data-id="3"
             />
             <img
+              class="thumb"
+              data-image-src="./assets/images/image-product-4-thumbnail.jpg"
               src="./assets/images/image-product-4-thumbnail.jpg"
-              alt="Image with two sneakers in thumbnail"
+              alt="thumbnail 4"
+              data-id="4"
             />
           </div>
         </article>
@@ -163,32 +178,36 @@
           <div class="close-lightbox">
             <img src="./assets/images/icon-close-lightbox.svg" alt="Icon Close">
           </div>
-          <div class="prev-next">
-            <button class="prev-btn"><img src="./assets/images/icon-previous.svg" alt="Icon Previous"></button>
-            <button class="next-btn"><img src="./assets/images/icon-next.svg" alt="Icon Next"></button>
-          </div>
-          <img
+          <img class="main-thumb"
             src="./assets/images/image-product-1.jpg"
             alt="Image with two sneakers"
           />
         </div>
         <div class="thumb-lightbox">
-          <img
+          <img class="thumb-lb"
             src="./assets/images/image-product-1-thumbnail.jpg"
-            alt="Image with two sneakers in thumbnail"
+            alt="thumbnail 1"
+            data-id="1"
           />
-          <img
+          <img class="thumb-lb"
             src="./assets/images/image-product-2-thumbnail.jpg"
-            alt="Image with two sneakers in thumbnail"
+            alt="thumbnail 2"
+            data-id="2"
           />
-          <img
+          <img class="thumb-lb"
             src="./assets/images/image-product-3-thumbnail.jpg"
-            alt="Image with two sneakers in thumbnail"
+            alt="thumbnail 3"
+            data-id="3"
           />
-          <img
+          <img class="thumb-lb"
             src="./assets/images/image-product-4-thumbnail.jpg"
-            alt="Image with two sneakers in thumbnail"
+            alt="thumbnail 4"
+            data-id="4"
           />
+        </div>
+        <div class="prev-next">
+          <button class="prev-btn"><img src="./assets/images/icon-previous.svg" alt="Icon Previous"></button>
+          <button class="next-btn"><img src="./assets/images/icon-next.svg" alt="Icon Next"></button>
         </div>
       </div>
 
